@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-pink-200 h-screen">
     <IndexHeader />
     </div>
 </template>

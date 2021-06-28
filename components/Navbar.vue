@@ -80,7 +80,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-gradient-to-r from-blue-900 via-purple-900 to-blue-900 h-1 shadow-md" />
+    <div class="bg-gradient-to-r from-yellow-300 via-orange-200 to-yellow-200 h-1 shadow-md" />
   </div>
 </template>
 <script>
@@ -89,6 +89,11 @@ export default {
   data () {
     return {
       isMenuOpen: false
+    }
+  },
+  watch: {
+    $route () {
+      this.isMenuOpen = false
     }
   }
 }
