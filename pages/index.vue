@@ -1,12 +1,20 @@
 <template>
-  <div class="bg-pink-200 h-screen">
+  <div id="background" class="bg-pink-200 h-screen">
     <IndexHeader />
-    </div>
+  </div>
 </template>
 
 <script lang="ts">
 
 export default {
-  layout: 'default'
+  layout: 'default',
+  data () { 
+    return { 
+      selectedColor: ''
+    }
+  },
+  methods: {
+
+  }
 }
 </script>
