@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import Menu from 'c:/Users/HarryHiggins/Documents/Repositories/HarryHiggins/HarryHiggins/src/components/Menu.vue'
+import Menu from '@/components/Menu.vue'
 
 
 
