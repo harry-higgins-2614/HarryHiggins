@@ -1,8 +1,13 @@
 <template>
+  <div class="ml-4 pt-2">
     <div class="w-100 h-fit relative">
-      <div
-        class="border-detail" v-if="visible"></div>
+      <div class="border-detail" v-if="visible"></div>
+      <header class="text-[10vw] leading-[0.8] font-semibold uppercase">
+        <slot name="header"></slot>
+      </header>
+      <slot name="content"></slot>
       <slot></slot>
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -11,10 +16,11 @@
   transform-origin: top;
   content: "";
   position: absolute;
-  top: 1rem;
+  top: 4rem;
+  left:-2rem;
   bottom: 0;
   @apply bg-zinc-700;
-  animation: slideFromTop 1.8s ease-in-out;
+  animation: slideFromTop 3s ease-in-out;
 }
 
 @keyframes slideFromTop {
@@ -38,11 +44,8 @@ import { onMounted, ref } from "vue";
 
 const props = defineProps({
   showDetail: String,
-  visible: Boolean
+  visible: Boolean,
 });
 
 const global = useGlobalStore();
-
-
-
 </script>
