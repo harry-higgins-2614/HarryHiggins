@@ -1,9 +1,9 @@
 <template>
-  <div class="ml-4 pt-2">
+  <div class="md:ml-4 pt-2">
     <div class="w-100 h-fit relative">
-      <div class="border-detail" v-if="visible"></div>
-      <header class="text-[10vw] leading-[0.8] font-semibold uppercase">
+      <header class="text-[10vw] leading-[0.8] font-semibold uppercase w-max  max-w-max relative">
         <slot name="header"></slot>
+        <div class="border-detail md:block hidden" v-if="visible"></div>
       </header>
       <slot name="content"></slot>
       <slot></slot>
@@ -12,20 +12,33 @@
 </template>
 <style lang="scss" scoped>
 .border-detail {
-  width: 2px;
-  transform-origin: top;
+  height: 2px;
+  transform-origin: left;
   content: "";
+  width: calc(100% + 3rem);
   position: absolute;
-  top: 4rem;
-  left:-2rem;
-  bottom: 0;
+  left:-0.5rem;
+  
   @apply bg-zinc-700;
-  animation: slideFromTop 3s ease-in-out;
+  transition-delay: 1.6s;
+  animation: slideFromTop 1.6s ease-in-out;
+
+
+//   &::after { 
+//       content: '';
+//       height: 0.5rem;
+//       width: 0.5rem;
+//       @apply bg-zinc-700 rounded-full;
+//       position: absolute;
+//       left: calc(-.16rem - .2px);
+//       bottom: -.1rem;
+//       transform: none;
+//   }
 }
 
 @keyframes slideFromTop {
   0% {
-    transform: scaleY(0);
+    transform: scaleX(0);
     opacity: 0.2;
   }
 
@@ -34,7 +47,7 @@
   }
 
   100% {
-    transform: scaleY(1);
+    transform: scaleX(1);
   }
 }
 </style>

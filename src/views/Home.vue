@@ -13,13 +13,13 @@
     </p>
   </div>
 
-<main class="space-y-32">
+<main class="md:space-y-32 space-y-12">
   <observable v-slot="slotted">
     <Section
       showDetail="left"
       :visible="slotted.visible"
     >
-      <template v-slot:header>Work</template>
+      <template v-slot:header><span>Work</span></template>
       <div class="content space-y-2">
         <p class="mt-4">
           I'm currently <span class="font-semibold">Product Lead</span> at
@@ -54,13 +54,13 @@
   <div class="w-full max-w-full h-32 flex flex-row justify-around items-center">
       
     <div class="flex flex-col justify-center items-center h-full">
-          <img src="@/assets/Prezzybox_Logo.svg" class="h-full"/>
-          <h1 class="text-slate-800 tracking-wider">Product Lead</h1>
+          <img src="@/assets/Prezzybox_Logo.svg" class="md:h-full h-12"/>
+          <h1 class="text-slate-800 md:text-2xl text-lg">Product Lead</h1>
       </div>
-      <span class="text-5xl">+</span>
+      <span class="md:text-5xl md:visible"></span>
     <div class="flex flex-col justify-center items-center h-full">
-          <img src="@/assets/Prezzybox_Logo.svg" class="h-full"/>
-          <h1>Software Engineer</h1>
+          <img src="@/assets/Prezzybox_Logo.svg" class="md:h-full h-12"/>
+          <h1 class="text-slate-800 w-max-content md:text-2xl text-lg" >Software Engineer</h1>
     </div>
 
   </div>
