@@ -14,7 +14,7 @@
     </Transition>
     <span v-if="triggerSlide" class="reveal-from-left inline-block ml-2 text-2xl font-display">Harry Higgins</span>
     </div>
-    <MenuIcon></MenuIcon>
+    <!-- <MenuIcon v-if="triggerSlide"></MenuIcon> -->
 </header>
 </template>
 <style lang="scss">
@@ -70,8 +70,10 @@ const triggerSlide = ref(false);
 
 const open = ref(false);
 
-const onEnter = function(el, done) { 
+const onEnter = function() { 
+  setTimeout(() => {
     triggerSlide.value = true;
+  }, 200);
 }
 
 const toggleOpen = function() { 
