@@ -7,33 +7,20 @@
       <template v-slot:header><span>Work</span></template>
       <div class="content space-y-2">
         <p class="mt-4">
-          I'm currently <span class="font-semibold">Product Lead</span> at
+          <span class="font-semibold">Product Lead</span> at
           <a href="https://www.prezzybox.com"
           class="link"
           target="_new" 
-          >Prezzybox.com</a>, working with an amazing team of talented people.
+          >Prezzybox.com</a>
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-          fuga, ad alias accusantium porro ducimus vitae assumenda distinctio
-          dignissimos rem, ut sint quis vero sed? Dolorem, autem. Animi,
-          voluptate rerum!
+        Status: Working with an amazing group of talented people to create moments of happiness by delivering the extraordinary.
         </p>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci,
-          cumque quos ducimus beatae sapiente a itaque atque non distinctio nemo
-          molestiae iusto maxime consectetur error est temporibus. Maxime, aut
-          fugiat. Dicta eos, exercitationem esse a excepturi, quas nihil magni
-          inventore sequi quis molestiae illo deleniti architecto, veritatis
-          recusandae fugiat reiciendis repudiandae culpa dolorem minima
-          similique! Maxime quam facere deserunt pariatur? Dicta rerum cum
-          provident assumenda dolor ex vitae corporis, voluptas nulla tempora
-          aut, molestiae eaque odit maxime harum error laboriosam. Voluptatem
-          temporibus nam, quam velit beatae ex soluta accusamus porro.
-          Doloremque tenetur quas iusto voluptates beatae at hic ratione
-          nesciunt quis mollitia incidunt praesentium itaque perferendis,
-          voluptate illo? Reiciendis alias minima earum sint debitis dignissimos
-          facilis aperiam quibusdam. Perferendis, laboriosam?
+        As a software engineer, this means providing the highest-quality shopping experience possible for our customers.
+        </p>
+        <p>
+        As product lead, I'm always on the look out both for areas we need to improve upon, as well as new features that will make Prezzybox.com a destination renowned for its amazing online experience.
         </p>
       </div>
     </Section>

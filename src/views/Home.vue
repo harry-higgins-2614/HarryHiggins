@@ -3,14 +3,19 @@
     <h1 class="">{{greeting}}</h1>
 
     <p class="font-semibold">
-      I'm Harry, a software engineer with a focus on delivering perfectly
-      polished products.
+      I'm Harry, a full-stack software engineer with a focus on delivering perfect, polished products.
     </p>
-    <!-- <p>
-      Learn
-      <router-link to="/about" class="link">about</router-link>
-      me here, or carry on scrolling.
-    </p> -->
+    <p>
+     I've officially been working in tech for a couple of years, but have been tinkering and learning web development since I was about ten - which means I've been around long enough to remember what a marquee is.
+    </p>
+    <marquee>Look at me!</marquee>
+
+    <p>
+    I'm passionate about all aspects of development, although I'd be lying if I said I didn't have an affinity for front-end work. There's something about taking a design and turning it into functional code that excites me.
+    </p>
+    <p>
+        Currently, I'm Product Lead at Prezzybox.
+    </p>
   </div>
 
 <main class="md:space-y-32 space-y-12">
