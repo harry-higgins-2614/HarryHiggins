@@ -14,7 +14,7 @@
     </Transition>
     <span v-if="triggerSlide" class="reveal-from-left inline-block ml-2 text-2xl font-display">Harry Higgins</span>
     </div>
-    <!-- <MenuIcon v-if="triggerSlide"></MenuIcon> -->
+    <MenuIcon v-if="triggerSlide"></MenuIcon>
 </header>
 </template>
 <style lang="scss">
