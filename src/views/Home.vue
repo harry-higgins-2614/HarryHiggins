@@ -1,29 +1,90 @@
-<script setup>
-import ButtonRepo from '@/components/ButtonRepo.vue'
-</script>
-
 <template>
-  <div class="bg-gray-50">
-    <div
-      class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8"
-    >
-      <h2
-        class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
-      >
-        Ready to dive in?
-        <br />
-        <span class="text-indigo-600">Vite + Vue 3 + Tailwind CSS</span>
-      </h2>
-      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-        <div class="inline-flex rounded-md shadow">
-          <router-link
-            to="/about"
-            class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-indigo-500 focus:outline-none"
-            >Next Page</router-link
-          >
-        </div>
-        <ButtonRepo />
-      </div>
+<div class="mb-4 space-y-2">
+<h1 class="">Hello!</h1>
+
+<p class="font-semibold">I'm Harry, a software engineer with a focus on delivering perfectly polished products.</p>    
+<p>  Learn 
+<router-link to="/about" class="link">about</router-link>
+ me here, or carry on scrolling.
+</p>
+</div>
+
+
+<observable v-slot="slotted">
+
+<Section class="mt-4 observable" showDetail="left" :visible="slotted.visible">
+    <div class="ml-4 pt-2">
+    <h1 class="text-5xl">Work</h1>
+    <div class="content space-y-2">
+    <p class="mt-4">I'm currently <span class="font-semibold">Product Lead</span> at Prezzybox.com, working with an amazing team of talented people.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, fuga, ad alias accusantium porro ducimus vitae assumenda distinctio dignissimos rem, ut sint quis vero sed? Dolorem, autem. Animi, voluptate rerum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, cumque quos ducimus beatae sapiente a itaque atque non distinctio nemo molestiae iusto maxime consectetur error est temporibus. Maxime, aut fugiat.
+    Dicta eos, exercitationem esse a excepturi, quas nihil magni inventore sequi quis molestiae illo deleniti architecto, veritatis recusandae fugiat reiciendis repudiandae culpa dolorem minima similique! Maxime quam facere deserunt pariatur?
+    Dicta rerum cum provident assumenda dolor ex vitae corporis, voluptas nulla tempora aut, molestiae eaque odit maxime harum error laboriosam. Voluptatem temporibus nam, quam velit beatae ex soluta accusamus porro.
+    Doloremque tenetur quas iusto voluptates beatae at hic ratione nesciunt quis mollitia incidunt praesentium itaque perferendis, voluptate illo? Reiciendis alias minima earum sint debitis dignissimos facilis aperiam quibusdam. Perferendis, laboriosam?</p>
     </div>
-  </div>
+    </div>
+</Section>
+</observable>
+
+<observable v-slot="slotted">
+
+<Section class="mt-4 observable" showDetail="left" :visible="slotted.visible">
+    <div class="ml-4 pt-2">
+    <h1 class="text-5xl">Work</h1>
+    <div class="content space-y-2">
+    <p class="mt-4">I'm currently <span class="font-semibold">Product Lead</span> at Prezzybox.com, working with an amazing team of talented people.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, fuga, ad alias accusantium porro ducimus vitae assumenda distinctio dignissimos rem, ut sint quis vero sed? Dolorem, autem. Animi, voluptate rerum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, cumque quos ducimus beatae sapiente a itaque atque non distinctio nemo molestiae iusto maxime consectetur error est temporibus. Maxime, aut fugiat.
+    Dicta eos, exercitationem esse a excepturi, quas nihil magni inventore sequi quis molestiae illo deleniti architecto, veritatis recusandae fugiat reiciendis repudiandae culpa dolorem minima similique! Maxime quam facere deserunt pariatur?
+    Dicta rerum cum provident assumenda dolor ex vitae corporis, voluptas nulla tempora aut, molestiae eaque odit maxime harum error laboriosam. Voluptatem temporibus nam, quam velit beatae ex soluta accusamus porro.
+    Doloremque tenetur quas iusto voluptates beatae at hic ratione nesciunt quis mollitia incidunt praesentium itaque perferendis, voluptate illo? Reiciendis alias minima earum sint debitis dignissimos facilis aperiam quibusdam. Perferendis, laboriosam?</p>
+    </div>
+    </div>
+</Section>
+</observable>
+
+<observable v-slot="slotted">
+
+<Section class="mt-4 observable" showDetail="left" :visible="slotted.visible">
+    <div class="ml-4 pt-2">
+    <h1 class="text-5xl">Work</h1>
+    <div class="content space-y-2">
+    <p class="mt-4">I'm currently <span class="font-semibold">Product Lead</span> at Prezzybox.com, working with an amazing team of talented people.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, fuga, ad alias accusantium porro ducimus vitae assumenda distinctio dignissimos rem, ut sint quis vero sed? Dolorem, autem. Animi, voluptate rerum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, cumque quos ducimus beatae sapiente a itaque atque non distinctio nemo molestiae iusto maxime consectetur error est temporibus. Maxime, aut fugiat.
+    Dicta eos, exercitationem esse a excepturi, quas nihil magni inventore sequi quis molestiae illo deleniti architecto, veritatis recusandae fugiat reiciendis repudiandae culpa dolorem minima similique! Maxime quam facere deserunt pariatur?
+    Dicta rerum cum provident assumenda dolor ex vitae corporis, voluptas nulla tempora aut, molestiae eaque odit maxime harum error laboriosam. Voluptatem temporibus nam, quam velit beatae ex soluta accusamus porro.
+    Doloremque tenetur quas iusto voluptates beatae at hic ratione nesciunt quis mollitia incidunt praesentium itaque perferendis, voluptate illo? Reiciendis alias minima earum sint debitis dignissimos facilis aperiam quibusdam. Perferendis, laboriosam?</p>
+    </div>
+    </div>
+</Section>
+</observable>
+
+<observable v-slot="slotted">
+<Section class="mt-4 observable" showDetail="left" :visible="slotted.visible">
+    <div class="ml-4 pt-2">
+    <h1 class="text-5xl">Work</h1>
+    <div class="content space-y-2">
+    <p class="mt-4">I'm currently <span class="font-semibold">Product Lead</span> at Prezzybox.com, working with an amazing team of talented people.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, fuga, ad alias accusantium porro ducimus vitae assumenda distinctio dignissimos rem, ut sint quis vero sed? Dolorem, autem. Animi, voluptate rerum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, cumque quos ducimus beatae sapiente a itaque atque non distinctio nemo molestiae iusto maxime consectetur error est temporibus. Maxime, aut fugiat.
+    Dicta eos, exercitationem esse a excepturi, quas nihil magni inventore sequi quis molestiae illo deleniti architecto, veritatis recusandae fugiat reiciendis repudiandae culpa dolorem minima similique! Maxime quam facere deserunt pariatur?
+    Dicta rerum cum provident assumenda dolor ex vitae corporis, voluptas nulla tempora aut, molestiae eaque odit maxime harum error laboriosam. Voluptatem temporibus nam, quam velit beatae ex soluta accusamus porro.
+    Doloremque tenetur quas iusto voluptates beatae at hic ratione nesciunt quis mollitia incidunt praesentium itaque perferendis, voluptate illo? Reiciendis alias minima earum sint debitis dignissimos facilis aperiam quibusdam. Perferendis, laboriosam?</p>
+    </div>
+    </div>
+</Section>
+</observable>
+
 </template>
+
+<style>
+</style>
+
+<script setup>
+import Section from "@/components/Section.vue"
+import Observable from "@/components/Observable.vue"
+import { onMounted } from "vue"
+
+</script>
