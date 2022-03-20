@@ -34,7 +34,7 @@
           <img src="@/assets/Prezzybox_Logo.svg" class="md:h-full h-12"/>
           <h1 class="text-slate-800 md:text-xl text-lg">Product Lead</h1>
       </div>
-      <span class="md:text-5xl"></span>
+      <span class="text-5xl md:block hidden font-display">+</span>
     <div class="flex flex-col justify-center items-center h-full">
           <img src="@/assets/Prezzybox_Logo.svg" class="md:h-full h-12"/>
           <h1 class="text-slate-800 w-max-content md:text-xl text-lg" >Software Engineer</h1>

@@ -1,9 +1,9 @@
 <template>
-  <div class="md:ml-4 pt-2">
+  <div class="pt-2">
     <div class="w-100 h-fit relative">
-      <header class="text-[10vw] leading-[0.8] font-semibold uppercase w-max  max-w-max relative">
+      <header class="text-[20vw] md:text-[10vw] leading-[0.8] tracking-widest font-display uppercase w-max  max-w-max relative">
         <slot name="header"></slot>
-        <div class="border-detail md:-left-2 md:w-[100%] w-full" v-if="visible"></div>
+        <div class="border-detail md:-left-2 md:w-[100%] w-full hidden" v-if="visible"></div>
       </header>
       <slot name="content"></slot>
       <slot></slot>

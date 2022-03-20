@@ -1,29 +1,25 @@
 <template>
-  <div class="mb-4 space-y-2">
+  <div class="md:my-48 my-32 space-y-2">
     <h1 class="">{{greeting}}</h1>
-
     <p class="font-semibold">
       I'm Harry, a full-stack software engineer with a focus on delivering perfect, polished products.
     </p>
     <p>
-     I've officially been working in tech for a couple of years, but have been tinkering and learning web development since I was about ten - which means I've been around long enough to remember what a marquee is.
+     I've officially been working in tech for a couple of years, but have been tinkering and learning web development since I was about ten - which means I've been around long enough to remember what a marquee is:
     </p>
-    <marquee>Look at me!</marquee>
-
+    <marquee class="md:w-1/4 w-1/3">Look at me!</marquee>
     <p>
-    I'm passionate about all aspects of development, although I'd be lying if I said I didn't have an affinity for front-end work. There's something about taking a design and turning it into functional code that excites me.
+    I'm passionate about all aspects of development, although I have an affinity for front-end work. There's something about taking a design and turning it into functional code that excites me.
     </p>
     <p>
-        Currently, I'm Product Lead at Prezzybox.
+    Currently, I'm Product Lead at Prezzybox.com
     </p>
   </div>
 
-<main class="md:space-y-32 space-y-12">
- <work></work>
-<skills></skills>
-
- 
-  </main>
+<main class="md:space-y-48 space-y-12 md:mb-48 mb-24">
+  <Work/>
+  <Skills/>
+</main>
 </template>
 
 <style>
@@ -33,8 +29,8 @@
 import Section from "@/components/Section.vue";
 import Observable from "@/components/Observable.vue";
 
-import work from "@/components/Home/Sections/Work.vue"
-import skills from "@/components/Home/Sections/Skills.vue"
+import Work from "@/components/Home/Sections/Work.vue"
+import Skills from "@/components/Home/Sections/Skills.vue"
 import { ref, onMounted } from "vue";
 
 const greeting = ref(null);

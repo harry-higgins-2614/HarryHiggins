@@ -1,21 +1,23 @@
 <template>
-<header class="flex flex-row justify-between items-center">
+<header class="flex flex-row justify-between items-center mr-2">
 <div class="logo-bit w-2/3 md:w-1/2">
   <Transition appear mode="out-in" name="slide-fade"
   @enter="onEnter">
         <span v-if="!global.loading">
             <span class="">
             <router-link to="/">
-                <span class="character-box">H</span>
+                <Character-Box character="H"/>
             </router-link>
             </span>
         </span>
+
     </Transition>
     <span v-if="triggerSlide" class="reveal-from-left inline-block ml-2 text-2xl font-display">Harry Higgins</span>
     </div>
+    <MenuIcon></MenuIcon>
 </header>
 </template>
-<style>
+<style lang="scss">
 #clip-wrapper {
   height: 100%;
   display: inline-flex;
@@ -35,8 +37,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 100%;
-  height: 100%; */
   background: #20262b;
   padding: inherit;
   animation: .75s cubic-bezier(1,-0.01,.12,.8) 0.2s 1 revealFromLeft forwards;
@@ -58,6 +58,8 @@
 }
 </style>
 <script setup>
+import MenuIcon from "@/components/MenuIcon.vue"
+import CharacterBox from "@/components/CharacterBox.vue"
 import { useGlobalStore } from "@/stores/global";
 import { ref } from "vue";
 
@@ -66,7 +68,13 @@ const global = useGlobalStore();
 
 const triggerSlide = ref(false);
 
+const open = ref(false);
+
 const onEnter = function(el, done) { 
     triggerSlide.value = true;
+}
+
+const toggleOpen = function() { 
+  open.value = !open.value;
 }
 </script>
