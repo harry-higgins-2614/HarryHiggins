@@ -23,7 +23,7 @@
       <div class="content space-y-2">
         <p class="mt-4">
           I'm currently <span class="font-semibold">Product Lead</span> at
-          Prezzybox.com, working with an amazing team of talented people.
+          <a href="https://prezzybox.com" class="link">Prezzybox.com</a>, working with an amazing team of talented people.
         </p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,

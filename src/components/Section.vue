@@ -22,18 +22,6 @@
   @apply bg-zinc-700;
   transition-delay: 1.6s;
   animation: slideFromTop 1.6s ease-in-out;
-
-
-//   &::after { 
-//       content: '';
-//       height: 0.5rem;
-//       width: 0.5rem;
-//       @apply bg-zinc-700 rounded-full;
-//       position: absolute;
-//       left: calc(-.16rem - .2px);
-//       bottom: -.1rem;
-//       transform: none;
-//   }
 }
 
 @keyframes slideFromTop {

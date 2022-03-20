@@ -33,7 +33,7 @@ h2 {
     @apply border-2 border-dashed border-indigo-900/50 px-1 cursor-pointer;
 
     &:hover { 
-        @apply border-indigo-500;
+        @apply border-indigo-500 cursor-pointer;
     }
 }
 
