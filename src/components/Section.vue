@@ -3,7 +3,7 @@
     <div class="w-100 h-fit relative">
       <header class="text-[10vw] leading-[0.8] font-semibold uppercase w-max  max-w-max relative">
         <slot name="header"></slot>
-        <div class="border-detail md:block hidden" v-if="visible"></div>
+        <div class="border-detail md:-left-2 md:w-[100%] w-full" v-if="visible"></div>
       </header>
       <slot name="content"></slot>
       <slot></slot>
@@ -15,9 +15,8 @@
   height: 2px;
   transform-origin: left;
   content: "";
-  width: calc(100% + 3rem);
+//   width: calc(100% + 3rem);
   position: absolute;
-  left:-0.5rem;
   
   @apply bg-zinc-700;
   transition-delay: 1.6s;

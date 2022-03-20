@@ -30,7 +30,7 @@ h2 {
 }
 
 .link { 
-    @apply border-2 border-dashed border-indigo-900/50 px-1 cursor-pointer;
+    @apply border-2 border-dashed border-indigo-900/40 px-1 cursor-pointer inline-block;
 
     &:hover { 
         @apply border-indigo-500 cursor-pointer;

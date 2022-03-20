@@ -8,7 +8,7 @@ export default {
 
     setTimeout(() => {
       useGlobalStore().loaded();
-    }, 500);
+    }, 800);
     return {
       global,
     };
