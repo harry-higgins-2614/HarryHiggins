@@ -4,7 +4,8 @@ export const useGlobalStore = defineStore('global', {
   state: () => {
     return { 
       loading: true,
-      isMenuOpen: false
+      isMenuOpen: false,
+      darkMode: localStorage.getItem('darkMode') !== null
     }
   },
   actions: {
@@ -14,6 +15,10 @@ export const useGlobalStore = defineStore('global', {
     toggleMenuOpen() { 
       document.querySelector('body').classList.toggle('no-scroll');
       this.isMenuOpen = !this.isMenuOpen;
+    },
+    toggleDarkMode() { 
+      this.darkMode = !this.darkMode;
     }
+
   },
 })

@@ -32,7 +32,7 @@ h2 {
 }
 
 .link { 
-    @apply border-2 border-dashed border-indigo-900/40 px-1 cursor-pointer inline-block;
+    @apply border-2 border-dashed border-indigo-900/40 px-1 cursor-pointer inline-block dark:border-purple-200/25;
 
     &:hover { 
         @apply border-indigo-500 cursor-pointer;
@@ -45,6 +45,17 @@ body {
     background-image: var(--background-url);
     @apply lg:mx-48 lg:my-8 md:mx-24 sm:mx-12 mx-4 my-4 max-w-[100vw] overflow-x-hidden;
 
+
+}
+body.dark { 
+    @apply bg-slate-700 text-white transition-all
+}
+
+.dark {
+    
+    p,li,ul,marquee { 
+        @apply text-white/90;
+}
 }
 
 .no-scroll { 

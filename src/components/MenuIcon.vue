@@ -2,7 +2,6 @@
   <div
     class="relative z-20"
     tabindex="0"
-    @keyup.enter="global.toggleMenuOpen"
     @keyup.esc="global.toggleMenuOpen"
     @keyup="(e) => handleKeyPress(e)"
   >
@@ -10,7 +9,7 @@
       <div
         class="menu-icon"
         @click="global.toggleMenuOpen"
-        :class="global.isMenuOpen ? 'active bg-purple-100' : ''"
+        :class="global.isMenuOpen ? 'active bg-purple-100 dark:bg-zinc-700' : ''"
       >
         <div>
           <span></span>
@@ -25,13 +24,19 @@
         class="w-full text-center"
         @mouseenter="selectedIndex = index"
       >
-        <router-link
+        <router-link v-if="item.path"
           :to="item.path"
           class="w-full block"
           :class="selectedIndex == index ? 'bg-purple-300/50' : ''"
           >{{ item.title }}</router-link
         >
+        <div class="dark-mode cursor-pointer"
+        :class="selectedIndex == index ? 'bg-purple-300/50' : ''"
+         v-else @click="toggleDarkMode()">
+        {{ item.title }}
       </div>
+      </div>
+   
       <div class="socials">
         <div class="social-box bg-blue-400">
             <a href="https://twitter.com/harryhigginsuk">
@@ -68,16 +73,13 @@
   @apply justify-self-end flex justify-around flex-row w-full absolute bottom-4;
 
   > .social-box { 
-      @apply h-12 w-12 flex justify-center items-center cursor-pointer;
+    @apply h-12 w-12 flex justify-center items-center cursor-pointer;
   }
 }
 .menu {
-  @apply h-72 w-64 bg-purple-100 absolute right-0 flex flex-col justify-start items-center tracking-widest text-2xl font-display space-y-4 pt-4 shadow-lg;
+  @apply h-72 w-64 bg-purple-100  dark:bg-zinc-700 absolute right-0 flex flex-col justify-start items-center tracking-widest text-2xl font-display space-y-4 pt-4 shadow-lg;
 }
 
-:root {
-  --bar-bg: #212529;
-}
 
 .active-item {
   background: var(---main-light-color);
@@ -114,9 +116,10 @@
     display: block;
     width: 100%;
     height: 2px;
-    background-color: var(--bar-bg, #000);
     border-radius: 1px;
     transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+
+    @apply bg-slate-900 dark:bg-white;
 
     &:first-of-type {
       top: 0;
@@ -162,12 +165,15 @@
 </style>
 
 <script setup>
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 import { ref, onMounted, reactive, watch } from "vue";
 import { useGlobalStore } from "@/stores/global";
 
 const global = useGlobalStore();
 const selectedIndex = ref(null);
+
+const router = useRouter();
+const route = useRoute();
 
 global.$subscribe((mutation, state) => {
   if (
@@ -178,34 +184,72 @@ global.$subscribe((mutation, state) => {
   }
 });
 
+
+const toggleDarkMode = () => { 
+ 
+  const darkMode = localStorage.getItem('darkMode');
+
+  if (darkMode) { 
+    localStorage.removeItem('darkMode');
+  } else { 
+    localStorage.setItem('darkMode', 'true');
+  }
+    global.toggleDarkMode();
+  document.querySelector('body').classList.toggle('dark');
+}
+
 const menuItems = reactive([
   { title: "home", path: "/" },
   { title: "about", path: "/about" },
+  {title: "toggle dark mode", action: toggleDarkMode}
 ]);
 
 const handleKeyPress = (e) => {
   if (!global.isMenuOpen) return;
 
+
+  // Down arrow
   if (e.keyCode == 40) {
     if (selectedIndex.value + 1 == menuItems.length) {
       selectedIndex.value = 0;
       return;
     }
     selectedIndex.value++;
-  } else if (e.keyCode == 38) {
+  } 
+  // Up Arrow
+  else if (e.keyCode == 38) {
     if (selectedIndex.value - 1 == -1) {
       selectedIndex.value = menuItems.length - 1;
       return;
     }
     selectedIndex.value--;
+  } else if (e.keyCode == 13) { 
+
+    const currentItem = menuItems[selectedIndex.value];
+      if (currentItem.action) { 
+        currentItem.action();
+        return;
+      } else if (currentItem.path) { 
+        router.push(currentItem.path);
+      }
   }
+
+
+
 };
 
-const route = useRoute();
+watch(() => global.isMenuOpen, (value,newValue) => { 
+  if (global.isMenuOpen) { 
+    document.querySelector('body').classList.add('no-scroll');
+  } else { 
+    document.querySelector('body').classList.remove('no-scroll');
+  }
+})
 watch(
   () => route.path,
   (value, newValue) => {
     global.isMenuOpen = false;
   }
 );
+
 </script>

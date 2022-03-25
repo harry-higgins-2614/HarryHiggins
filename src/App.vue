@@ -5,6 +5,13 @@ import Footer from "@/components/Footer.vue"
 import { useGlobalStore } from "@/stores/global";
 
 const global = useGlobalStore();
+
+const darkMode = localStorage.getItem('darkMode');
+
+
+  if (darkMode) { 
+    document.querySelector('body').classList.add('dark');
+  }
 </script>
 
 <template>

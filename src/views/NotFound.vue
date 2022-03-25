@@ -1,7 +1,7 @@
 <template>
   <header class="">
     <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-      <h1 class="text-3xl leading-tight text-zinc-900">404 - Not Found</h1>
+      <h1 class="text-3xl leading-tight">404 - Not Found</h1>
 
       <div class="space-y-4">
       <p>Awkward. Probably my fault.</p>
