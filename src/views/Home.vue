@@ -18,7 +18,12 @@
 
 <main class="md:space-y-48 space-y-12 md:mb-48 mb-24">
   <Work/>
-  <Skills/>
+  <!-- <Skills/> -->
+
+  <div>
+      <game-canvas></game-canvas>
+
+  </div>
 </main>
 </template>
 
@@ -28,7 +33,7 @@
 <script setup>
 import Section from "@/components/Section.vue";
 import Observable from "@/components/Observable.vue";
-
+import GameCanvas from "@/components/Game/GameCanvas.vue"
 import Work from "@/components/Home/Sections/Work.vue"
 import Skills from "@/components/Home/Sections/Skills.vue"
 import { ref, onMounted } from "vue";
