@@ -39,26 +39,7 @@
                     <p>In July 2018, AngularJS  entered a 3-year period of Long Term Support, with a view to phasing support for the framework out entirely.</p>
                     <p>Prezzybox.com's entire front-end was built using AngularJS.</p>
                     <p>This was obviously a problem - not only would we suffer brain drain and recruitment struggles by using an outdated framework, there are performance and security implications for our customer too.</p>
-                    <p>Vue was the obvious choice. We're only a small dev team, and its syntax is similar to AngularJS, the framework we all knew <s>and loved</s>, due to it being created by a former AngularJS Dev.</p>
-                    <p>Ultimately the risk of <em>not</em> dropping AngularJS outweighed the risks involved with migrating (no new features while moving, bug fixes essentially having to be applied twice).</p>
-                    <p>Truth be told, I had had my eyes on this project from before I even joined the technical team, and its completion is one of my biggest achievements at Prezzybox.</p>
-                    <p>Work started in April 2021 - we opted for a progressive migration - it made no sense to try and move everything at once, instead, we would do one section of the site at a time, learning and improving as we went.</p>
-                    <p>First up was the product page, then category pages, the home page, search pages, and finally checkout (this is still in progress - it felt too risky to change this just before Christmas!).</p>
-                    <p>In migrating away from AngularJS we had a faster, more modern framework - one that was still supported and we would have less trouble finding new talent for!</p>
-                    <p>It's quicker too, meaning a better shopping experience for our customers.</p>
-                </div>
-                <figure>
-                <img class="md:w-1/3 w-full h-full" src="@/assets/Prezzybox_Product_Page.png" alt="An Example of a Prezzybox.com Product Page"/>
-                <figcaption>An example Prezzybox.com Product Page</figcaption>
-                </figure>
-            </div>
-              <div class="prezzybox-migration flex flex-row flex-wrap items-center justify-center mt-12" >
-                <div class="md:w-2/3 w-full space-y-3 mb-3 md:pr-12">
-                    <h2 class="text-xl font-bold w-full">Prezzybox.com Progressive Migration from AngularJS to Vue</h2>
-                    <p>In July 2018, AngularJS  entered a 3-year period of Long Term Support, with a view to phasing support for the framework out entirely.</p>
-                    <p>Prezzybox.com's entire front-end was built using AngularJS.</p>
-                    <p>This was obviously a problem - not only would we suffer brain drain and recruitment struggles by using an outdated framework, there are performance and security implications for our customer too.</p>
-                    <p>Vue was the obvious choice. We're only a small dev team, and its syntax is similar to AngularJS, the framework we all knew <s>and loved</s>, due to it being created by a former AngularJS Dev.</p>
+                    <p>Vue was the obvious choice. We're only a small dev team - we couldn't spend massive amounts of time retraining - angularJS to Vue was the closest thing to a "straight swap" we were going to get. Its syntax is very similar to AngularJS, the framework we all knew <s>and loved</s>, due to it being created by a former AngularJS Dev.</p>
                     <p>Ultimately the risk of <em>not</em> dropping AngularJS outweighed the risks involved with migrating (no new features while moving, bug fixes essentially having to be applied twice).</p>
                     <p>Truth be told, I had had my eyes on this project from before I even joined the technical team, and its completion is one of my biggest achievements at Prezzybox.</p>
                     <p>Work started in April 2021 - we opted for a progressive migration - it made no sense to try and move everything at once, instead, we would do one section of the site at a time, learning and improving as we went.</p>
