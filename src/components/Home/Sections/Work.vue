@@ -185,9 +185,38 @@
           Software Engineer
         </h1>
       </div>
+
+
+     
     </div>
+     
+     <router-link to="/prezzybox">
+     <div class="mt-32 text-center text-slate-900 text-lg font-bold">
+     <span class="link link-pad">Explore my work at Prezzybox <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline absolute mt-1 ml-1 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+</svg>
+</span>
+</div>
+</router-link>
   </Observable>
 </template>
+<style scoped>
+.link-pad { 
+  @apply pr-6 !important;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-25%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+.animate-bounce {
+    animation: bounce 2s infinite;
+}</style>
 <script setup>
 import Section from "@/components/Section.vue";
 import Observable from "@/components/Observable.vue";
