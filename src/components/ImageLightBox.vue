@@ -7,7 +7,6 @@
 </template>
 <script setup>
 import { useGlobalStore } from "@/stores/global"
-import { onMounted, onUnmounted } from "vue"
 const global = useGlobalStore();
 
 
