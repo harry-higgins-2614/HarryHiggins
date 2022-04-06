@@ -53,7 +53,7 @@
                 </div>
                 <figure class="md:w-1/3 sm:w-2/5 w-full h-full">
                 <img class="cursor-pointer" src="/src/assets/Prezzybox_Product_Page.png" alt="An Example of a Prezzybox.com Product Page" @click="openLightBox('/assets/Prezzybox_Product_Page.png')"/>
-                <figcaption>An example Prezzybox.com Product Page</figcaption>
+                <figcaption class="text-center">An example Prezzybox.com Product Page</figcaption>
                 </figure>
             </div>
         </div>  
