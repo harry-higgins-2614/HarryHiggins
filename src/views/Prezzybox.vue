@@ -57,9 +57,9 @@
 </div>
 
 
-<div class="marketing">
+<div class="marketing mt-12">
 <h1>Marketing</h1>
-<p class="first-letter:text-5xl">During this time we managed to achieve and maintain sustained high-profile positions on search engine result pages - personal highlights include being in position 1 for "Christmas Gifts", leading to a huge volume of orders & revenue, as well as a marked increase in brand visibility and recognition.</p>
+<p class="">During this time we managed to achieve and maintain sustained high-profile positions on search engine result pages - personal highlights include being in position 1 for "Christmas Gifts", leading to a huge volume of orders & revenue, as well as a marked increase in brand visibility and recognition.</p>
 
 <p>In 2020 I spoke at the Spring Fair at the NEC about gifting trends, utilising data gathered from various internal and external sources.</p>
 </div>
