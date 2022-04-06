@@ -18,9 +18,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ["DM Serif Display", "serif", ...defaultTheme.fontFamily.serif],
-        serif:  ['Cormorant Garamond', "serif", ...defaultTheme.fontFamily.serif],
-        sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
+        display: ["Fraunces", "serif", ...defaultTheme.fontFamily.serif],
+        serif:  [ "serif", ...defaultTheme.fontFamily.serif],
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: withOpacityValue("--main-light-color"),

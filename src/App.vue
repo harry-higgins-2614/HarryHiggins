@@ -4,14 +4,24 @@ import HeaderComp from "@/components/Header.vue"
 import Footer from "@/components/Footer.vue"
 import { useGlobalStore } from "@/stores/global";
 
+import ImageLightBox from "@/components/ImageLightBox.vue"
 const global = useGlobalStore();
 
 const darkMode = localStorage.getItem('darkMode');
 
 
-  if (darkMode) { 
-    document.querySelector('body').classList.add('dark');
+if (darkMode) { 
+  document.querySelector('body').classList.add('dark');
+}
+
+global.$subscribe((mutation, state) => { 
+  console.log(state.isLightBoxOpen);
+  if (state.isLightBoxOpen == true) { 
+    document.body.style.overflowY = "hidden";
+  } else { 
+    document.body.style.overflowY = "unset";
   }
+})
 </script>
 
 <template>
@@ -25,6 +35,7 @@ const darkMode = localStorage.getItem('darkMode');
 
 
   <Footer></Footer>
+  <ImageLightBox v-if="global.isLightBoxOpen"></ImageLightBox>
 
   
 </template>

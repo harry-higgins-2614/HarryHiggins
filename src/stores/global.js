@@ -5,7 +5,9 @@ export const useGlobalStore = defineStore('global', {
     return { 
       loading: true,
       isMenuOpen: false,
-      darkMode: localStorage.getItem('darkMode') !== null
+      darkMode: localStorage.getItem('darkMode') !== null,
+      isLightBoxOpen: false,
+      lightBoxSource: null
     }
   },
   actions: {

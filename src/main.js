@@ -36,6 +36,9 @@ const pinia = createPinia();
 const app = createApp(App)
 
 const router = createRouter({
+  scrollBehavior(to, from, position) { 
+    return { top: 0}
+  },
   history: createWebHistory(),
   routes,
 })
