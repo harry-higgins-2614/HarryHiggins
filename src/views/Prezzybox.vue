@@ -1,6 +1,6 @@
 <template>
 
-<div class="space-y-3 w-2/3 mx-auto">
+<div class="space-y-3 md:w-full">
 <div class="space-y-3 my-12">
 <h1 class="text-5xl">Harry Higgins @ Prezzybox</h1>
 <p>
@@ -8,7 +8,7 @@
 </p>
 <p>While working as an SEO, I became more and more interested in the more technical side of things: how does the website work? why did what I just do break the website? You know, those kinds of things.</p>
 <p>So when the opportunity came up to officially join the technical team, I jumped at it. That was in 2020 (arguably one of the only decent things to happen in 2020).</p>
-<p>Currently, I'm Product Lead. Which is a fancy way of saying that I'm always on the look-out for ways to improve Prezzybox.com as a product: new features, places where we're not as good as we could be, even new routes to market.</p>
+<p>Currently, I'm ✨Product Lead✨ - A fancy way of saying that I'm always on the look-out for ways to improve Prezzybox.com as a product: new features, places where we're not as good as we could be, even new routes to market.</p>
 <p>Being a software engineer too, that means that I am sometimes seeing projects through from inception all the way through to deployment.</p>
 </div>
 
@@ -18,11 +18,11 @@
             <p>Moving into tech was a big change, but I was excited to get started on some big projects to help make Prezzybox a better website, and better operationally, too.</p>
             <p>I've outlined some of my favourite projects below, hopefully you'll find them interesting. If nothing else, it helps me to remember😅</p>
     </div>
-    <div class="flex flex-row">
+    <div class="flex flex-row w-full">
         <div class="">
 
-            <div class="screaming-frog flex flex-row flex-wrap items-center justify-center mt-12" >
-                <div class="md:w-2/3 w-full space-y-3 mb-3 md:pr-12">
+            <div class="screaming-frog flex flex-row flex-wrap items-center justify-around mt-12" >
+                <div class="md:w-2/3 sm:w-full w-full space-y-3 mb-3 md:pr-12">
                     <h2 class="text-xl font-bold w-full">Screaming Frog Runner (weird name, I know)</h2>
                     <p>I feel like I should address this first: Screaming Frog is a program used widely by SEOs to crawl their website to diagnose issues with rankings, indexability, and more... it's nothing to do with actual frogs, nor making them scream. No idea where the name came from.</p>
                     <p>This was my first real task as part of the technical team, and it's something that I loved working on as it melded my SEO experience and gave me exposure to a lot of different areas of tech!</p>
@@ -37,7 +37,7 @@
                 </figure>
             </div>
 
-              <div class="prezzybox-migration flex flex-row flex-wrap items-center justify-center mt-12" >
+              <div class="prezzybox-migration flex flex-row flex-wrap items-center justify-center my-12" >
                 <div class="md:w-2/3 w-full space-y-3 mb-3 md:pr-12">
                     <h2 class="text-xl font-bold w-full">Prezzybox.com Progressive Migration from AngularJS to Vue</h2>
                     <p>In July 2018, AngularJS  entered a 3-year period of Long Term Support, with a view to phasing support for the framework out entirely.</p>
@@ -51,7 +51,7 @@
                     <p>In migrating away from AngularJS we had a faster, more modern framework - one that was still supported and we would have less trouble finding new talent for!</p>
                     <p>It's quicker too, meaning a better shopping experience for our customers.</p>
                 </div>
-                <figure class="md:w-1/3 w-full h-full">
+                <figure class="md:w-1/3 sm:w-2/5 w-full h-full">
                 <img class="cursor-pointer" src="/src/assets/Prezzybox_Product_Page.png" alt="An Example of a Prezzybox.com Product Page" @click="openLightBox('/src/assets/Prezzybox_Product_Page.png')"/>
                 <figcaption>An example Prezzybox.com Product Page</figcaption>
                 </figure>
@@ -61,10 +61,11 @@
 </div>
 
 
-<div class="marketing mt-12">
-<h1>Marketing</h1>
+<div class="marketing mt-12 space-y-3">
+<h1 class="text-5xl">Marketing</h1>
+<p>I worked as an SEO Executive as part of the digital marketing team, responsible for ensuring our site ranked as highly as possible for as many relevant terms as possible.</p>
 <p class="">During this time we managed to achieve and maintain sustained high-profile positions on search engine result pages - personal highlights include being in position 1 for "Christmas Gifts", leading to a huge volume of orders & revenue, as well as a marked increase in brand visibility and recognition.</p>
-
+<p>It was as an SEO that I started exploring more technical things: I was writing C# code to generate reports, build tooling useful for the marketing team, and using HTML, CSS, and JavaScript to create content that people want to link to!</p>
 <p>In 2020 I spoke at the Spring Fair at the NEC about gifting trends, utilising data gathered from various internal and external sources.</p>
 </div>
 </div>
