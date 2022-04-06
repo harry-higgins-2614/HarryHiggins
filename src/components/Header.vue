@@ -12,7 +12,7 @@
         </span>
 
     </Transition>
-    <span v-if="triggerSlide" class="reveal-from-left inline-block ml-2 text-2xl font-display">Harry Higgins</span>
+    <span v-if="triggerSlide" class="reveal-from-left inline-block ml-2 md:text-2xl text-lg font-display">Harry Higgins</span>
     </div>
     <MenuIcon v-if="triggerSlide"></MenuIcon>
 </header>

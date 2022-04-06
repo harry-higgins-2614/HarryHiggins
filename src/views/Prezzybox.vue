@@ -32,7 +32,7 @@
                     <p>Automating this task saved roughly half an hour to an hour per day, and also gave us automated alerts on any costly issues that could otherwise have been missed (e.g. if someone accidentally no-indexed the site, essentially removing it from Google).</p>
                 </div>
                 <figure class="md:w-1/3 w-full">
-                <img class="cursor-pointer" src="@/assets/Screaming_Frog_Audits.png" alt="An Example output of the Screaming Frog Runner"  @click="openLightBox('/src/assets/Screaming_Frog_Audits.png')"/>
+                <img class="cursor-pointer" src="@/assets/Screaming_Frog_Audits.png" alt="An Example output of the Screaming Frog Runner"  @click="openLightBox('./src/assets/Screaming_Frog_Audits.png')"/>
                 <figcaption>An example output of the Screaming Frog Runner.</figcaption>
                 </figure>
             </div>
@@ -52,7 +52,7 @@
                     <p>It's quicker too, meaning a better shopping experience for our customers.</p>
                 </div>
                 <figure class="md:w-1/3 sm:w-2/5 w-full h-full">
-                <img class="cursor-pointer" src="/src/assets/Prezzybox_Product_Page.png" alt="An Example of a Prezzybox.com Product Page" @click="openLightBox('/src/assets/Prezzybox_Product_Page.png')"/>
+                <img class="cursor-pointer" src="/src/assets/Prezzybox_Product_Page.png" alt="An Example of a Prezzybox.com Product Page" @click="openLightBox('./src/assets/Prezzybox_Product_Page.png')"/>
                 <figcaption>An example Prezzybox.com Product Page</figcaption>
                 </figure>
             </div>
@@ -71,7 +71,6 @@
 </div>
 </template>
 <script setup>
-
 import { useGlobalStore } from "@/stores/global"
 
 const global = useGlobalStore();
