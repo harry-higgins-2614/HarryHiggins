@@ -19,6 +19,8 @@
 <main class="md:space-y-48 space-y-12 md:mb-48 mb-24">
   <Work/>
   <Skills/>
+<!-- 
+  <Prism language="css" :code="'color: red;'"></Prism> -->
 </main>
 </template>
 
@@ -28,6 +30,7 @@
 <script setup>
 import Section from "@/components/Section.vue";
 import Observable from "@/components/Observable.vue";
+import Prism from "@/components/Prism.vue"
 
 import Work from "@/components/Home/Sections/Work.vue"
 import Skills from "@/components/Home/Sections/Skills.vue"

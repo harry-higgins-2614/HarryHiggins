@@ -4,8 +4,11 @@ import App from './App.vue'
 import { routes } from './routes.js'
 import { createRouter, createWebHistory } from 'vue-router'
 import { createPinia } from 'pinia'
+import VuePrism from "vue-prism"
 
 
+import 'prismjs/themes/prism.css'
+import "prismjs/components/prism-csharp";
 
 export const appear = {
   beforeMount(element) {
@@ -45,6 +48,8 @@ const router = createRouter({
 
 app.use(router)
 app.use(pinia);
+
+app.use(VuePrism)
 
 app.directive('appear', appear)
 app.mount('#app')

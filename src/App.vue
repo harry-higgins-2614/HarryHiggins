@@ -4,6 +4,7 @@ import HeaderComp from "@/components/Header.vue"
 import Footer from "@/components/Footer.vue"
 import { useGlobalStore } from "@/stores/global";
 
+
 import ImageLightBox from "@/components/ImageLightBox.vue"
 const global = useGlobalStore();
 
