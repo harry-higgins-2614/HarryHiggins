@@ -41,7 +41,7 @@ global.lightBoxSource = imageSource;
     <div class="space-y-3 w-2/3">
     <h2>Whimsical Projects</h2>
     <p>I'll often spend a weekend hashing out an idea for an application or website, mostly fun stuff!</p>
-    <p>Recently this has included a <a href="https://festive-mahavira-997ef9.netlify.app/" class="link" target="_new">Wordle" clone</a> without the one-word-per-day limit, to practice and try and like, be better at words and stuff.</p>
+    <p>Recently this has included a <a href="https://festive-mahavira-997ef9.netlify.app/" class="link" target="_new">"Wordle" clone</a> without the one-word-per-day limit, to practice and try and like, be better at words and stuff.</p>
     <p>Over lockdown, I made a "cinema" experience app for the kids. I used GitHub pages to host the project, and then loaded it up on a tablet so they could pick from a selection of movies and "order" tickets, as well as "order" food and snacks from the kitchen.</p>
     <p>It seemed to excite them whenever we'd have a movie night! It made things a little bit more interactive, and provided a welcome distraction from COVID, lockdown, and isolation.</p>
     <div class="flex flex-row space-x-4">
