@@ -56,6 +56,26 @@
                 <figcaption class="text-center">An example Prezzybox.com Product Page</figcaption>
                 </figure>
             </div>
+
+              <div class="prezzybox-migration flex flex-row flex-wrap items-center justify-center my-12" >
+                <div class="md:w-2/3 w-full space-y-3 mb-3 md:pr-12">
+                    <h2 class="text-xl font-bold w-full">Prezzybox.com Product Cross-Selling</h2>
+                    <p>After conducting research into how competitors and industry leaders merchandise and cross-sell on their eCommerce sites, I identified that Prezzybox was leaving money on the table.</p>
+                    <p>We could add product lists to a few areas of the site to encourage customers to increase their average spend.</p>
+                    <p>The two main areas were: 
+                        <ul>
+                            <li>The modal that appears, confirming a product has been added to your cart.</li>
+                            <li>In the cart itself, below the list of items the customer has selected.</li>
+                        </ul>
+                    </p>
+                    <p>By integrating with a 3rd party recommendations service and API, we ensured that customers get personalised recommendations that they're more likely to want to purchase.</p>
+                    <p>These product lists, in November + December of 2021 alone, drove over 2,000 additional unit sales, meaning an <strong>additional ~£25,000</strong> in revenue.</p>
+                </div>
+                <figure class="md:w-1/3 sm:w-2/5 w-full h-full">
+                <img class="cursor-pointer" src="/src/assets/Prezzybox_Cross_Sells.png" alt="An Example of a Cross Selling Product List" @click="openLightBox('/assets/Prezzybox_Cross_Sells.png')"/>
+                <figcaption class="text-center">A Cross-Selling Product List</figcaption>
+                </figure>
+            </div>
         </div>  
     </div>
 </div>

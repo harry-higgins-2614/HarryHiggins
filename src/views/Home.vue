@@ -1,5 +1,5 @@
 <template>
-  <div class="md:my-48 my-32 space-y-2">
+  <div class="md:my-32 my-32 space-y-3">
     <h1 class="transition-colors duration-100">{{greeting}}</h1>
     <p class="font-semibold">
       I'm Harry, a full-stack software engineer with a focus on delivering perfect, polished products.
