@@ -9,7 +9,7 @@
     </p>
     <marquee class="md:w-1/4 w-1/3">Look at me!</marquee>
     <p>
-    I'm passionate about all aspects of development, although I have an affinity for front-end work. There's something about taking a design and turning it into functional code that excites me.
+    I'm passionate about all aspects of development, although I can't help feeling a particular affinity for front-end work - perhaps because it's closer to being "tangible".
     </p>
     <p>
     Currently, I'm Product Lead at Prezzybox.com
