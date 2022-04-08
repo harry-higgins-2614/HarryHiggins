@@ -33,7 +33,7 @@
         <div class="dark-mode cursor-pointer"
         :class="selectedIndex == index ? 'bg-purple-300/50' : ''"
          v-else @click="toggleDarkMode()">
-        {{ item.title }}
+        {{global.darkMode ? 'light' : 'dark'}} mode {{global.darkMode ? '☀️' : '🌑'}}
       </div>
       </div>
    
@@ -182,7 +182,10 @@ global.$subscribe((mutation, state) => {
   ) {
     selectedIndex.value = null;
   }
+
+  console.log(state.darkMode);
 });
+
 
 
 const toggleDarkMode = () => { 
@@ -200,8 +203,9 @@ const toggleDarkMode = () => {
 
 const menuItems = reactive([
   { title: "home", path: "/" },
-  { title: "about", path: "/about" },
-  {title: "toggle dark mode", action: toggleDarkMode}
+  { title: "what I'm up to ", path: "/prezzybox" },
+  { title: "about me", path: "/about" },
+  {title: `dark mode`, action: toggleDarkMode}
 ]);
 
 const handleKeyPress = (e) => {
