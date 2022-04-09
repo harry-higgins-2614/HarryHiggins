@@ -31,7 +31,7 @@ global.lightBoxSource = imageSource;
     <h1 class="mb-3">About Me!</h1>
     <div class="flex flex-col space-y-12">
     <div class="space-y-3">
-    <p>I'm a {{age}} year-old Software Engineer from the UK 🇬🇧</p>
+    <p>I'm a {{age}} year-old Software Engineer from the UK</p>
     <p>I have two young children who are my fundamental reason for being here. Being a father is the best, most important thing I will ever be - even when I don't feel like a particularly good one!</p>
     <p>In 2021 I got married to the love of my life after being together for 10 years and it was one of the happiest days of my life (see above for the other happiest days of my life).</p>
     <p>In any spare time I get (which isn't <em>that</em> much with the chiddlers!), I enjoy video games - most recently I've been playing <em>Elden Ring</em> (along with the rest of the world).</p>
