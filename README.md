@@ -2,7 +2,7 @@
 
 [https://harryhiggins.co.uk](https://harryhiggins.co.uk)
 
-Nothing too amazing going on here, mostly HTML + CSS (Tailwind).
+Nothing too complicated going on here, mostly HTML + CSS (Tailwind).
 
 Uses Vite as a build tool, and Vue 3 mostly utilising `<script setup>` 
 ### Getting Started
