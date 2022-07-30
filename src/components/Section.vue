@@ -1,7 +1,7 @@
 <template>
   <div class="pt-2">
     <div class="w-100 h-fit relative">
-      <header class="text-[20vw] md:text-[10vw] leading-[1.2] tracking-widest font-display uppercase w-max  max-w-max relative">
+      <header class="text-[10vw] md:text-[5vw] leading-[1.2] tracking-widest font-display uppercase w-max  max-w-max relative">
         <slot name="header"></slot>
         <div class="border-detail md:-left-2 md:w-[100%] w-full hidden" v-if="visible"></div>
       </header>
