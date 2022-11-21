@@ -7,7 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "pinia": "^2.0.12",
+    "pinia": "^2.0.24",
     "prismjs": "^1.27.0",
     "vue": "^3.2.31",
     "vue-cool-lightbox": "^2.7.4",
