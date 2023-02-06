@@ -9,7 +9,7 @@
   "dependencies": {
     "pinia": "^2.0.12",
     "prismjs": "^1.27.0",
-    "vue": "^3.2.31",
+    "vue": "^3.2.47",
     "vue-cool-lightbox": "^2.7.4",
     "vue-prism-component": "^2.0.0",
     "vue-router": "^4.0.14"
